@@ -25,7 +25,7 @@ const handleRequest = frames(async (ctx) => {
     "text",
     "Every Single Frame by @ds8\n\nBeautiful frames from visual masterpieces"
   );
-  shareParams.set("url", sharedUrl);
+  shareParams.set("embeds[]", sharedUrl);
   const shareUrl = `https://warpcast.com/~/compose?${shareParams.toString()}`;
   return {
     image: `${frame.baseUrl}${num}${frame.ext ?? ".jpg"}`,
