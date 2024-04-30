@@ -1,7 +1,6 @@
 import { createFrames, Button } from "frames.js/next";
 import data from "../data.json";
-
-export const baseUrl = process.env.NEXT_PUBLIC_HOST || "http://localhost:3000";
+import { baseUrl } from "../constants";
 
 const frames = createFrames({
   baseUrl,

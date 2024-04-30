@@ -2,7 +2,7 @@ import { fetchMetadata } from "frames.js/next";
 import { Metadata } from "next";
 
 import data from "../../data.json";
-import { baseUrl } from "@/app/frames/route";
+import { baseUrl } from "../../constants";
 
 export async function generateMetadata({
   params,
