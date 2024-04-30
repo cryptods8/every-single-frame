@@ -34,7 +34,7 @@ const handleRequest = frames(async (ctx) => {
         action="post"
         target={{ pathname: "/", query: { slug: frame.slug } }}
       >
-        {`Random - ${frame.title}`}
+        {`${frame.title} - Random`}
       </Button>,
       <Button action="post" target={{ pathname: "/" }}>
         Random
